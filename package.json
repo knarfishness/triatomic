@@ -1,12 +1,13 @@
 {
-  "name": "triatomic",
+  "name": "marvin-42",
   "version": "0.0.0",
   "private": true,
-  "author": "Bob Bergman <rbergman@atlassian.com>",
-  "description": "A simple helpful robot for your Company",
+  "author": "Frank Avery <frankavery@quickenloans>",
+  "description": "A QL implementation of Hubot for Hipchat",
   "dependencies": {
-    "hubot": "^2.12.0",
+    "hubot": "^2.16.0",
     "hubot-diagnostics": "0.0.1",
+    "hubot-gif": "0.0.1",
     "hubot-google-images": "^0.1.4",
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
