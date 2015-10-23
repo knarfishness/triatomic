@@ -14,7 +14,7 @@
 #   mbmccormick
 env = process.env
 
-forecastIoUrl = 'https://api.forecast.io/forecast/' + process.env.HUBOT_FORECAST_API_KEY + '/'
+forecastIoUrl = 'https://api.forecast.io/forecast/1ef927481bf04edb6ed8816e2e629de7/'
 googleMapUrl = 'http://maps.googleapis.com/maps/api/geocode/json'
 
 lookupAddress = (msg, location, cb) ->
