@@ -30,7 +30,7 @@ lookupAddress = (msg, location, cb) ->
 
 lookupWeather = (msg, coords, err) ->
   return msg.send err if err
-  return msg.send "You need to set env.HUBOT_FORECAST_API_KEY to get weather data" if not env.HUBOT_FORECAST_API_KEY
+  #return msg.send "You need to set env.HUBOT_FORECAST_API_KEY to get weather data" if not env.HUBOT_FORECAST_API_KEY
 
   url = forecastIoUrl + coords.lat + ',' + coords.lng
 
@@ -48,7 +48,7 @@ lookupWeather = (msg, coords, err) ->
 
 lookupForecast = (msg, coords, err) ->
   return msg.send err if err
-  return msg.send "You need to set env.HUBOT_FORECAST_API_KEY to get weather data" if not env.HUBOT_FORECAST_API_KEY
+  #return msg.send "You need to set env.HUBOT_FORECAST_API_KEY to get weather data" if not env.HUBOT_FORECAST_API_KEY
 
   url = forecastIoUrl + coords.lat + ',' + coords.lng
   msg.http(url).query(units: 'ca').get() (err, res, body) ->
